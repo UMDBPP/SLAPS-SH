@@ -234,7 +234,7 @@ LOAD /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-no
 END GROUP
                 0x0000000000002000                STACK_SIZE = DEFINED (STACK_SIZE)?STACK_SIZE:DEFINED (__stack_size__)?__stack_size__:0x2000
 
-.text           0x0000000000000000     0x1cf0
+.text           0x0000000000000000     0x1d48
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                _sfixed = .
  *(.vectors .vectors.*)
@@ -318,211 +318,212 @@ END GROUP
                 0x000000000000042c       0x28 build/SLAPSSHV1.0/utils.o
                 0x000000000000042c                resetIntoBootloader
  .text.led_tick
-                0x0000000000000454       0x58 build/SLAPSSHV1.0/utils.o
+                0x0000000000000454       0x88 build/SLAPSSHV1.0/utils.o
                 0x0000000000000454                led_tick
  .text.led_signal
-                0x00000000000004ac       0x20 build/SLAPSSHV1.0/utils.o
-                0x00000000000004ac                led_signal
+                0x00000000000004dc       0x2c build/SLAPSSHV1.0/utils.o
+                0x00000000000004dc                led_signal
  .text.led_init
-                0x00000000000004cc        0x2 build/SLAPSSHV1.0/utils.o
-                0x00000000000004cc                led_init
+                0x0000000000000508       0x10 build/SLAPSSHV1.0/utils.o
+                0x0000000000000508                led_init
  .text.RGBLED_set_color
-                0x00000000000004ce        0x2 build/SLAPSSHV1.0/utils.o
-                0x00000000000004ce                RGBLED_set_color
+                0x0000000000000518        0x2 build/SLAPSSHV1.0/utils.o
+                0x0000000000000518                RGBLED_set_color
+ *fill*         0x000000000000051a        0x2 
  .text.AT91F_InitUSB
-                0x00000000000004d0      0x108 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x00000000000004d0                AT91F_InitUSB
+                0x000000000000051c      0x108 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x000000000000051c                AT91F_InitUSB
  .text.USB_ReadCore
-                0x00000000000005d8       0xe0 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x00000000000005d8                USB_ReadCore
+                0x0000000000000624       0xe0 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000000624                USB_ReadCore
  .text.USB_Read
-                0x00000000000006b8        0xa build/SLAPSSHV1.0/cdc_enumerate.o
-                0x00000000000006b8                USB_Read
+                0x0000000000000704        0xa build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000000704                USB_Read
  .text.USB_ReadBlocking
-                0x00000000000006c2       0x22 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x00000000000006c2                USB_ReadBlocking
+                0x000000000000070e       0x22 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x000000000000070e                USB_ReadBlocking
  .text.USB_WriteCore
-                0x00000000000006e4       0x94 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x00000000000006e4                USB_WriteCore
+                0x0000000000000730       0x94 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000000730                USB_WriteCore
  .text.USB_Write
-                0x0000000000000778        0xa build/SLAPSSHV1.0/cdc_enumerate.o
-                0x0000000000000778                USB_Write
- *fill*         0x0000000000000782        0x2 
+                0x00000000000007c4        0xa build/SLAPSSHV1.0/cdc_enumerate.o
+                0x00000000000007c4                USB_Write
+ *fill*         0x00000000000007ce        0x2 
  .text.sendCtrl
-                0x0000000000000784       0x1c build/SLAPSSHV1.0/cdc_enumerate.o
+                0x00000000000007d0       0x1c build/SLAPSSHV1.0/cdc_enumerate.o
  .text.AT91F_USB_SendZlp
-                0x00000000000007a0       0x10 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x00000000000007a0                AT91F_USB_SendZlp
- .text.USB_Ok   0x00000000000007b0      0x4f8 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x00000000000007b0                USB_Ok
+                0x00000000000007ec       0x10 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x00000000000007ec                AT91F_USB_SendZlp
+ .text.USB_Ok   0x00000000000007fc      0x4f8 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x00000000000007fc                USB_Ok
  .text.usb_init
-                0x0000000000000ca8       0x20 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x0000000000000ca8                usb_init
+                0x0000000000000cf4       0x20 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000000cf4                usb_init
  .text.cdc_write_buf
-                0x0000000000000cc8        0xe build/SLAPSSHV1.0/cdc_enumerate.o
-                0x0000000000000cc8                cdc_write_buf
+                0x0000000000000d14        0xe build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000000d14                cdc_write_buf
  .text.cdc_write_buf_xmd
-                0x0000000000000cd6        0xe build/SLAPSSHV1.0/cdc_enumerate.o
-                0x0000000000000cd6                cdc_write_buf_xmd
+                0x0000000000000d22        0xe build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000000d22                cdc_write_buf_xmd
  .text.cdc_read_buf
-                0x0000000000000ce4       0x1e build/SLAPSSHV1.0/cdc_enumerate.o
-                0x0000000000000ce4                cdc_read_buf
+                0x0000000000000d30       0x1e build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000000d30                cdc_read_buf
  .text.cdc_read_buf_xmd
-                0x0000000000000d02       0x22 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x0000000000000d02                cdc_read_buf_xmd
+                0x0000000000000d4e       0x22 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000000d4e                cdc_read_buf_xmd
  .text.padded_memcpy
-                0x0000000000000d24       0x1e build/SLAPSSHV1.0/fat.o
-                0x0000000000000d24                padded_memcpy
- *fill*         0x0000000000000d42        0x2 
+                0x0000000000000d70       0x1e build/SLAPSSHV1.0/fat.o
+                0x0000000000000d70                padded_memcpy
+ *fill*         0x0000000000000d8e        0x2 
  .text.read_block
-                0x0000000000000d44      0x174 build/SLAPSSHV1.0/fat.o
-                0x0000000000000d44                read_block
+                0x0000000000000d90      0x174 build/SLAPSSHV1.0/fat.o
+                0x0000000000000d90                read_block
  .text.write_block
-                0x0000000000000eb8       0xe8 build/SLAPSSHV1.0/fat.o
-                0x0000000000000eb8                write_block
+                0x0000000000000f04       0xe8 build/SLAPSSHV1.0/fat.o
+                0x0000000000000f04                write_block
  .text.startup.main
-                0x0000000000000fa0      0x1e8 build/SLAPSSHV1.0/main.o
-                0x0000000000000fa0                main
+                0x0000000000000fec      0x1f4 build/SLAPSSHV1.0/main.o
+                0x0000000000000fec                main
  .text.udi_msc_clear_sense
-                0x0000000000001188       0x1c build/SLAPSSHV1.0/msc.o
+                0x00000000000011e0       0x1c build/SLAPSSHV1.0/msc.o
  .text.handover_flash
-                0x00000000000011a4       0x34 build/SLAPSSHV1.0/msc.o
+                0x00000000000011fc       0x34 build/SLAPSSHV1.0/msc.o
  .text.try_read_cbw
-                0x00000000000011d8       0x2c build/SLAPSSHV1.0/msc.o
-                0x00000000000011d8                try_read_cbw
+                0x0000000000001230       0x2c build/SLAPSSHV1.0/msc.o
+                0x0000000000001230                try_read_cbw
  .text.udi_msc_csw_send
-                0x0000000000001204       0x14 build/SLAPSSHV1.0/msc.o
-                0x0000000000001204                udi_msc_csw_send
+                0x000000000000125c       0x14 build/SLAPSSHV1.0/msc.o
+                0x000000000000125c                udi_msc_csw_send
  .text.udi_msc_csw_process
-                0x0000000000001218       0x38 build/SLAPSSHV1.0/msc.o
+                0x0000000000001270       0x38 build/SLAPSSHV1.0/msc.o
  .text.udi_msc_data_send
-                0x0000000000001250       0x6c build/SLAPSSHV1.0/msc.o
+                0x00000000000012a8       0x6c build/SLAPSSHV1.0/msc.o
  .text.udi_msc_spc_mode_sense
-                0x00000000000012bc       0x70 build/SLAPSSHV1.0/msc.o
+                0x0000000000001314       0x70 build/SLAPSSHV1.0/msc.o
  .text.udi_msc_sbc_trans
-                0x000000000000132c       0xc8 build/SLAPSSHV1.0/msc.o
+                0x0000000000001384       0xc8 build/SLAPSSHV1.0/msc.o
  .text.process_msc
-                0x00000000000013f4      0x140 build/SLAPSSHV1.0/msc.o
-                0x00000000000013f4                process_msc
+                0x000000000000144c      0x140 build/SLAPSSHV1.0/msc.o
+                0x000000000000144c                process_msc
  .text.handoverPrep
-                0x0000000000001534       0x24 build/SLAPSSHV1.0/msc.o
-                0x0000000000001534                handoverPrep
+                0x000000000000158c       0x24 build/SLAPSSHV1.0/msc.o
+                0x000000000000158c                handoverPrep
  .text.handover
-                0x0000000000001558       0xe0 build/SLAPSSHV1.0/msc.o
+                0x00000000000015b0       0xe0 build/SLAPSSHV1.0/msc.o
  .text.call_applet
-                0x0000000000001638       0x20 build/SLAPSSHV1.0/sam_ba_monitor.o
-                0x0000000000001638                call_applet
+                0x0000000000001690       0x20 build/SLAPSSHV1.0/sam_ba_monitor.o
+                0x0000000000001690                call_applet
  .text.put_uint32
-                0x0000000000001658       0x16 build/SLAPSSHV1.0/sam_ba_monitor.o
-                0x0000000000001658                put_uint32
- *fill*         0x000000000000166e        0x2 
+                0x00000000000016b0       0x16 build/SLAPSSHV1.0/sam_ba_monitor.o
+                0x00000000000016b0                put_uint32
+ *fill*         0x00000000000016c6        0x2 
  .text.sam_ba_monitor_run
-                0x0000000000001670      0x254 build/SLAPSSHV1.0/sam_ba_monitor.o
-                0x0000000000001670                sam_ba_monitor_run
+                0x00000000000016c8      0x254 build/SLAPSSHV1.0/sam_ba_monitor.o
+                0x00000000000016c8                sam_ba_monitor_run
  .text.recv_hf2
-                0x00000000000018c4       0x56 build/SLAPSSHV1.0/hid.o
-                0x00000000000018c4                recv_hf2
+                0x000000000000191c       0x56 build/SLAPSSHV1.0/hid.o
+                0x000000000000191c                recv_hf2
  .text.send_hf2
-                0x000000000000191a       0x46 build/SLAPSSHV1.0/hid.o
-                0x000000000000191a                send_hf2
+                0x0000000000001972       0x46 build/SLAPSSHV1.0/hid.o
+                0x0000000000001972                send_hf2
  .text.send_hf2_response
-                0x0000000000001960       0x14 build/SLAPSSHV1.0/hid.o
-                0x0000000000001960                send_hf2_response
+                0x00000000000019b8       0x14 build/SLAPSSHV1.0/hid.o
+                0x00000000000019b8                send_hf2_response
  .text.process_core
-                0x0000000000001974      0x100 build/SLAPSSHV1.0/hid.o
-                0x0000000000001974                process_core
+                0x00000000000019cc      0x100 build/SLAPSSHV1.0/hid.o
+                0x00000000000019cc                process_core
  .text.process_hid
-                0x0000000000001a74       0x28 build/SLAPSSHV1.0/hid.o
-                0x0000000000001a74                process_hid
+                0x0000000000001acc       0x28 build/SLAPSSHV1.0/hid.o
+                0x0000000000001acc                process_hid
  .text.hidHandoverLoop
-                0x0000000000001a9c       0x24 build/SLAPSSHV1.0/hid.o
-                0x0000000000001a9c                hidHandoverLoop
- .text          0x0000000000001ac0       0x14 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
-                0x0000000000001ac0                __gnu_thumb1_case_uqi
- .text.memcpy   0x0000000000001ad4       0x12 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
-                0x0000000000001ad4                memcpy
- .text.memset   0x0000000000001ae6       0x10 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
-                0x0000000000001ae6                memset
- .text          0x0000000000001af6        0xe /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-strlen.o)
-                0x0000000000001af6                strlen
+                0x0000000000001af4       0x24 build/SLAPSSHV1.0/hid.o
+                0x0000000000001af4                hidHandoverLoop
+ .text          0x0000000000001b18       0x14 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                0x0000000000001b18                __gnu_thumb1_case_uqi
+ .text.memcpy   0x0000000000001b2c       0x12 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
+                0x0000000000001b2c                memcpy
+ .text.memset   0x0000000000001b3e       0x10 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+                0x0000000000001b3e                memset
+ .text          0x0000000000001b4e        0xe /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-strlen.o)
+                0x0000000000001b4e                strlen
  *(.glue_7t)
- .glue_7t       0x0000000000001b04        0x0 linker stubs
+ .glue_7t       0x0000000000001b5c        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x0000000000001b04        0x0 linker stubs
+ .glue_7        0x0000000000001b5c        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
- .rodata        0x0000000000001b04       0x10 build/SLAPSSHV1.0/cdc_enumerate.o
+ .rodata        0x0000000000001b5c       0x10 build/SLAPSSHV1.0/cdc_enumerate.o
  .rodata.devDescriptor
-                0x0000000000001b14       0x12 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x0000000000001b14                devDescriptor
- *fill*         0x0000000000001b26        0x2 
+                0x0000000000001b6c       0x12 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000001b6c                devDescriptor
+ *fill*         0x0000000000001b7e        0x2 
  .rodata.hidDescriptor
-                0x0000000000001b28       0x21 build/SLAPSSHV1.0/cdc_enumerate.o
-                0x0000000000001b28                hidDescriptor
+                0x0000000000001b80       0x21 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000001b80                hidDescriptor
  .rodata.str1.1
-                0x0000000000001b49       0x26 build/SLAPSSHV1.0/cdc_enumerate.o
- *fill*         0x0000000000001b6f        0x1 
+                0x0000000000001ba1       0x26 build/SLAPSSHV1.0/cdc_enumerate.o
+ *fill*         0x0000000000001bc7        0x1 
  .rodata.string_descriptors
-                0x0000000000001b70       0x10 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000001bc8       0x10 build/SLAPSSHV1.0/cdc_enumerate.o
  .rodata.BootBlock
-                0x0000000000001b80       0x3e build/SLAPSSHV1.0/fat.o
+                0x0000000000001bd8       0x3e build/SLAPSSHV1.0/fat.o
  .rodata.indexFile
-                0x0000000000001bbe       0x5f build/SLAPSSHV1.0/fat.o
-                0x0000000000001bbe                indexFile
- *fill*         0x0000000000001c1d        0x3 
- .rodata.info   0x0000000000001c20       0x30 build/SLAPSSHV1.0/fat.o
+                0x0000000000001c16       0x5f build/SLAPSSHV1.0/fat.o
+                0x0000000000001c16                indexFile
+ *fill*         0x0000000000001c75        0x3 
+ .rodata.info   0x0000000000001c78       0x30 build/SLAPSSHV1.0/fat.o
  .rodata.infoUf2File
-                0x0000000000001c50       0x5a build/SLAPSSHV1.0/fat.o
-                0x0000000000001c50                infoUf2File
- .rodata        0x0000000000001caa        0xc build/SLAPSSHV1.0/msc.o
+                0x0000000000001ca8       0x5a build/SLAPSSHV1.0/fat.o
+                0x0000000000001ca8                infoUf2File
+ .rodata        0x0000000000001d02        0xc build/SLAPSSHV1.0/msc.o
  .rodata.process_msc.str1.1
-                0x0000000000001cb6        0xe build/SLAPSSHV1.0/msc.o
+                0x0000000000001d0e        0xe build/SLAPSSHV1.0/msc.o
  .rodata.fullVersion
-                0x0000000000001cb6       0x2a build/SLAPSSHV1.0/sam_ba_monitor.o
+                0x0000000000001d0e       0x2a build/SLAPSSHV1.0/sam_ba_monitor.o
  .rodata.sam_ba_monitor_run.str1.1
-                0x0000000000001ce0       0x10 build/SLAPSSHV1.0/sam_ba_monitor.o
+                0x0000000000001d38       0x10 build/SLAPSSHV1.0/sam_ba_monitor.o
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000000001cf0                . = ALIGN (0x4)
+                0x0000000000001d48                . = ALIGN (0x4)
  *(.init)
-                0x0000000000001cf0                . = ALIGN (0x4)
-                0x0000000000001cf0                __preinit_array_start = .
+                0x0000000000001d48                . = ALIGN (0x4)
+                0x0000000000001d48                __preinit_array_start = .
  *(.preinit_array)
-                0x0000000000001cf0                __preinit_array_end = .
-                0x0000000000001cf0                . = ALIGN (0x4)
-                0x0000000000001cf0                __init_array_start = .
+                0x0000000000001d48                __preinit_array_end = .
+                0x0000000000001d48                . = ALIGN (0x4)
+                0x0000000000001d48                __init_array_start = .
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
-                0x0000000000001cf0                __init_array_end = .
-                0x0000000000001cf0                . = ALIGN (0x4)
+                0x0000000000001d48                __init_array_end = .
+                0x0000000000001d48                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *crtend.o(.ctors)
-                0x0000000000001cf0                . = ALIGN (0x4)
-                0x0000000000001cf0                _efixed = .
+                0x0000000000001d48                . = ALIGN (0x4)
+                0x0000000000001d48                _efixed = .
                 [!provide]                        PROVIDE (__exidx_start = .)
 
-.vfp11_veneer   0x0000000000001cf0        0x0
- .vfp11_veneer  0x0000000000001cf0        0x0 linker stubs
+.vfp11_veneer   0x0000000000001d48        0x0
+ .vfp11_veneer  0x0000000000001d48        0x0 linker stubs
 
-.v4_bx          0x0000000000001cf0        0x0
- .v4_bx         0x0000000000001cf0        0x0 linker stubs
+.v4_bx          0x0000000000001d48        0x0
+ .v4_bx         0x0000000000001d48        0x0 linker stubs
 
-.iplt           0x0000000000001cf0        0x0
- .iplt          0x0000000000001cf0        0x0 build/SLAPSSHV1.0/flash_samd21.o
+.iplt           0x0000000000001d48        0x0
+ .iplt          0x0000000000001d48        0x0 build/SLAPSSHV1.0/flash_samd21.o
 
-.igot.plt       0x0000000000001cf0        0x0
- .igot.plt      0x0000000000001cf0        0x0 build/SLAPSSHV1.0/flash_samd21.o
+.igot.plt       0x0000000000001d48        0x0
+ .igot.plt      0x0000000000001d48        0x0 build/SLAPSSHV1.0/flash_samd21.o
 
-.rel.dyn        0x0000000000001cf0        0x0
- .rel.iplt      0x0000000000001cf0        0x0 build/SLAPSSHV1.0/flash_samd21.o
+.rel.dyn        0x0000000000001d48        0x0
+ .rel.iplt      0x0000000000001d48        0x0 build/SLAPSSHV1.0/flash_samd21.o
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 [!provide]                        PROVIDE (__exidx_end = .)
-                0x0000000000001cf0                . = ALIGN (0x4)
-                0x0000000000001cf0                _etext = .
+                0x0000000000001d48                . = ALIGN (0x4)
+                0x0000000000001d48                _etext = .
 
-.relocate       0x0000000020000000      0x1d0 load address 0x0000000000001cf0
+.relocate       0x0000000020000000      0x1d0 load address 0x0000000000001d48
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -558,7 +559,7 @@ END GROUP
                 0x00000000200001d0                . = ALIGN (0x4)
                 0x00000000200001d0                _erelocate = .
 
-.bss            0x00000000200001d0      0xc0c load address 0x0000000000001ec0
+.bss            0x00000000200001d0      0xc0c load address 0x0000000000001f18
                 0x00000000200001d0                . = ALIGN (0x4)
                 0x00000000200001d0                _sbss = .
                 0x00000000200001d0                _szero = .
@@ -626,7 +627,7 @@ END GROUP
                 0x0000000020000ddc                _ebss = .
                 0x0000000020000ddc                _ezero = .
 
-.stack          0x0000000020000ddc     0x2004 load address 0x0000000000002acc
+.stack          0x0000000020000ddc     0x2004 load address 0x0000000000002b24
                 0x0000000020000de0                . = ALIGN (0x8)
  *fill*         0x0000000020000ddc        0x4 
                 0x0000000020000de0                _sstack = .
@@ -644,44 +645,44 @@ END GROUP
                 0x0000000000001ff0                binfo
 OUTPUT(build/SLAPSSHV1.0/bootloader-SLAPSSHV1.0-v3.15.0.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x1a7a2
+.debug_info     0x0000000000000000    0x1b419
  .debug_info    0x0000000000000000     0x10f5 build/SLAPSSHV1.0/flash_samd21.o
  .debug_info    0x00000000000010f5     0x2599 build/SLAPSSHV1.0/init_samd21.o
  .debug_info    0x000000000000368e     0x3995 build/SLAPSSHV1.0/startup_samd21.o
  .debug_info    0x0000000000007023     0x4208 build/SLAPSSHV1.0/usart_sam_ba.o
- .debug_info    0x000000000000b22b      0xd80 build/SLAPSSHV1.0/utils.o
- .debug_info    0x000000000000bfab     0x497d build/SLAPSSHV1.0/cdc_enumerate.o
- .debug_info    0x0000000000010928     0x1121 build/SLAPSSHV1.0/fat.o
- .debug_info    0x0000000000011a49     0x2d41 build/SLAPSSHV1.0/main.o
- .debug_info    0x000000000001478a     0x3cec build/SLAPSSHV1.0/msc.o
- .debug_info    0x0000000000018476      0xf36 build/SLAPSSHV1.0/sam_ba_monitor.o
- .debug_info    0x00000000000193ac     0x13f6 build/SLAPSSHV1.0/hid.o
+ .debug_info    0x000000000000b22b     0x13d1 build/SLAPSSHV1.0/utils.o
+ .debug_info    0x000000000000c5fc     0x497d build/SLAPSSHV1.0/cdc_enumerate.o
+ .debug_info    0x0000000000010f79     0x1121 build/SLAPSSHV1.0/fat.o
+ .debug_info    0x000000000001209a     0x3367 build/SLAPSSHV1.0/main.o
+ .debug_info    0x0000000000015401     0x3cec build/SLAPSSHV1.0/msc.o
+ .debug_info    0x00000000000190ed      0xf36 build/SLAPSSHV1.0/sam_ba_monitor.o
+ .debug_info    0x000000000001a023     0x13f6 build/SLAPSSHV1.0/hid.o
 
-.debug_abbrev   0x0000000000000000     0x2bf6
+.debug_abbrev   0x0000000000000000     0x2c77
  .debug_abbrev  0x0000000000000000      0x304 build/SLAPSSHV1.0/flash_samd21.o
  .debug_abbrev  0x0000000000000304      0x3b1 build/SLAPSSHV1.0/init_samd21.o
  .debug_abbrev  0x00000000000006b5      0x29e build/SLAPSSHV1.0/startup_samd21.o
  .debug_abbrev  0x0000000000000953      0x510 build/SLAPSSHV1.0/usart_sam_ba.o
- .debug_abbrev  0x0000000000000e63      0x371 build/SLAPSSHV1.0/utils.o
- .debug_abbrev  0x00000000000011d4      0x562 build/SLAPSSHV1.0/cdc_enumerate.o
- .debug_abbrev  0x0000000000001736      0x369 build/SLAPSSHV1.0/fat.o
- .debug_abbrev  0x0000000000001a9f      0x3b4 build/SLAPSSHV1.0/main.o
- .debug_abbrev  0x0000000000001e53      0x586 build/SLAPSSHV1.0/msc.o
- .debug_abbrev  0x00000000000023d9      0x3f1 build/SLAPSSHV1.0/sam_ba_monitor.o
- .debug_abbrev  0x00000000000027ca      0x42c build/SLAPSSHV1.0/hid.o
+ .debug_abbrev  0x0000000000000e63      0x3e3 build/SLAPSSHV1.0/utils.o
+ .debug_abbrev  0x0000000000001246      0x562 build/SLAPSSHV1.0/cdc_enumerate.o
+ .debug_abbrev  0x00000000000017a8      0x369 build/SLAPSSHV1.0/fat.o
+ .debug_abbrev  0x0000000000001b11      0x3c3 build/SLAPSSHV1.0/main.o
+ .debug_abbrev  0x0000000000001ed4      0x586 build/SLAPSSHV1.0/msc.o
+ .debug_abbrev  0x000000000000245a      0x3f1 build/SLAPSSHV1.0/sam_ba_monitor.o
+ .debug_abbrev  0x000000000000284b      0x42c build/SLAPSSHV1.0/hid.o
 
-.debug_loc      0x0000000000000000     0x31e6
+.debug_loc      0x0000000000000000     0x31f3
  .debug_loc     0x0000000000000000      0x492 build/SLAPSSHV1.0/flash_samd21.o
  .debug_loc     0x0000000000000492       0x6f build/SLAPSSHV1.0/init_samd21.o
  .debug_loc     0x0000000000000501       0x5a build/SLAPSSHV1.0/startup_samd21.o
  .debug_loc     0x000000000000055b      0x9e6 build/SLAPSSHV1.0/usart_sam_ba.o
- .debug_loc     0x0000000000000f41      0x1a4 build/SLAPSSHV1.0/utils.o
- .debug_loc     0x00000000000010e5      0xc28 build/SLAPSSHV1.0/cdc_enumerate.o
- .debug_loc     0x0000000000001d0d      0x576 build/SLAPSSHV1.0/fat.o
- .debug_loc     0x0000000000002283       0x7a build/SLAPSSHV1.0/main.o
- .debug_loc     0x00000000000022fd      0x5e7 build/SLAPSSHV1.0/msc.o
- .debug_loc     0x00000000000028e4      0x252 build/SLAPSSHV1.0/sam_ba_monitor.o
- .debug_loc     0x0000000000002b36      0x6b0 build/SLAPSSHV1.0/hid.o
+ .debug_loc     0x0000000000000f41      0x1b1 build/SLAPSSHV1.0/utils.o
+ .debug_loc     0x00000000000010f2      0xc28 build/SLAPSSHV1.0/cdc_enumerate.o
+ .debug_loc     0x0000000000001d1a      0x576 build/SLAPSSHV1.0/fat.o
+ .debug_loc     0x0000000000002290       0x7a build/SLAPSSHV1.0/main.o
+ .debug_loc     0x000000000000230a      0x5e7 build/SLAPSSHV1.0/msc.o
+ .debug_loc     0x00000000000028f1      0x252 build/SLAPSSHV1.0/sam_ba_monitor.o
+ .debug_loc     0x0000000000002b43      0x6b0 build/SLAPSSHV1.0/hid.o
 
 .debug_aranges  0x0000000000000000      0x388
  .debug_aranges
@@ -720,18 +721,18 @@ OUTPUT(build/SLAPSSHV1.0/bootloader-SLAPSSHV1.0-v3.15.0.elf elf32-littlearm)
  .debug_ranges  0x0000000000000620       0x98 build/SLAPSSHV1.0/sam_ba_monitor.o
  .debug_ranges  0x00000000000006b8       0x88 build/SLAPSSHV1.0/hid.o
 
-.debug_line     0x0000000000000000     0x46fd
+.debug_line     0x0000000000000000     0x4776
  .debug_line    0x0000000000000000      0x485 build/SLAPSSHV1.0/flash_samd21.o
  .debug_line    0x0000000000000485      0x3ce build/SLAPSSHV1.0/init_samd21.o
  .debug_line    0x0000000000000853      0x2a5 build/SLAPSSHV1.0/startup_samd21.o
  .debug_line    0x0000000000000af8      0x954 build/SLAPSSHV1.0/usart_sam_ba.o
- .debug_line    0x000000000000144c      0x4da build/SLAPSSHV1.0/utils.o
- .debug_line    0x0000000000001926      0xd1b build/SLAPSSHV1.0/cdc_enumerate.o
- .debug_line    0x0000000000002641      0x606 build/SLAPSSHV1.0/fat.o
- .debug_line    0x0000000000002c47      0x603 build/SLAPSSHV1.0/main.o
- .debug_line    0x000000000000324a      0x99c build/SLAPSSHV1.0/msc.o
- .debug_line    0x0000000000003be6      0x5e5 build/SLAPSSHV1.0/sam_ba_monitor.o
- .debug_line    0x00000000000041cb      0x532 build/SLAPSSHV1.0/hid.o
+ .debug_line    0x000000000000144c      0x545 build/SLAPSSHV1.0/utils.o
+ .debug_line    0x0000000000001991      0xd1b build/SLAPSSHV1.0/cdc_enumerate.o
+ .debug_line    0x00000000000026ac      0x606 build/SLAPSSHV1.0/fat.o
+ .debug_line    0x0000000000002cb2      0x611 build/SLAPSSHV1.0/main.o
+ .debug_line    0x00000000000032c3      0x99c build/SLAPSSHV1.0/msc.o
+ .debug_line    0x0000000000003c5f      0x5e5 build/SLAPSSHV1.0/sam_ba_monitor.o
+ .debug_line    0x0000000000004244      0x532 build/SLAPSSHV1.0/hid.o
 
 .debug_str      0x0000000000000000     0x3eb0
  .debug_str     0x0000000000000000      0x76b build/SLAPSSHV1.0/flash_samd21.o
@@ -743,13 +744,13 @@ OUTPUT(build/SLAPSSHV1.0/bootloader-SLAPSSHV1.0-v3.15.0.elf elf32-littlearm)
  .debug_str     0x0000000000001d09      0xc55 build/SLAPSSHV1.0/usart_sam_ba.o
                                        0x1419 (size before relaxing)
  .debug_str     0x000000000000295e       0xc3 build/SLAPSSHV1.0/utils.o
-                                        0x72d (size before relaxing)
+                                        0x8bf (size before relaxing)
  .debug_str     0x0000000000002a21      0x43e build/SLAPSSHV1.0/cdc_enumerate.o
                                        0x1686 (size before relaxing)
  .debug_str     0x0000000000002e5f      0x29f build/SLAPSSHV1.0/fat.o
                                         0x949 (size before relaxing)
  .debug_str     0x00000000000030fe      0x12e build/SLAPSSHV1.0/main.o
-                                        0xfce (size before relaxing)
+                                       0x1140 (size before relaxing)
  .debug_str     0x000000000000322c      0x9dc build/SLAPSSHV1.0/msc.o
                                        0x190d (size before relaxing)
  .debug_str     0x0000000000003c08       0xa9 build/SLAPSSHV1.0/sam_ba_monitor.o
@@ -804,20 +805,20 @@ OUTPUT(build/SLAPSSHV1.0/bootloader-SLAPSSHV1.0-v3.15.0.elf elf32-littlearm)
  .ARM.attributes
                 0x000000000000025a       0x1c /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-strlen.o)
 
-.debug_frame    0x0000000000000000      0x90c
+.debug_frame    0x0000000000000000      0x914
  .debug_frame   0x0000000000000000       0xb0 build/SLAPSSHV1.0/flash_samd21.o
  .debug_frame   0x00000000000000b0       0x54 build/SLAPSSHV1.0/init_samd21.o
  .debug_frame   0x0000000000000104       0x4c build/SLAPSSHV1.0/startup_samd21.o
  .debug_frame   0x0000000000000150      0x184 build/SLAPSSHV1.0/usart_sam_ba.o
- .debug_frame   0x00000000000002d4       0xc4 build/SLAPSSHV1.0/utils.o
- .debug_frame   0x0000000000000398      0x1d0 build/SLAPSSHV1.0/cdc_enumerate.o
- .debug_frame   0x0000000000000568       0x68 build/SLAPSSHV1.0/fat.o
- .debug_frame   0x00000000000005d0       0x30 build/SLAPSSHV1.0/main.o
- .debug_frame   0x0000000000000600      0x170 build/SLAPSSHV1.0/msc.o
- .debug_frame   0x0000000000000770       0x94 build/SLAPSSHV1.0/sam_ba_monitor.o
- .debug_frame   0x0000000000000804       0xc0 build/SLAPSSHV1.0/hid.o
- .debug_frame   0x00000000000008c4       0x28 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00000000000008ec       0x20 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000000002d4       0xcc build/SLAPSSHV1.0/utils.o
+ .debug_frame   0x00000000000003a0      0x1d0 build/SLAPSSHV1.0/cdc_enumerate.o
+ .debug_frame   0x0000000000000570       0x68 build/SLAPSSHV1.0/fat.o
+ .debug_frame   0x00000000000005d8       0x30 build/SLAPSSHV1.0/main.o
+ .debug_frame   0x0000000000000608      0x170 build/SLAPSSHV1.0/msc.o
+ .debug_frame   0x0000000000000778       0x94 build/SLAPSSHV1.0/sam_ba_monitor.o
+ .debug_frame   0x000000000000080c       0xc0 build/SLAPSSHV1.0/hid.o
+ .debug_frame   0x00000000000008cc       0x28 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000000000008f4       0x20 /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
 
 Cross Reference Table
 
