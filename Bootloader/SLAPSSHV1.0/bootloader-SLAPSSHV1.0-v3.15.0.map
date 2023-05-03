@@ -234,7 +234,7 @@ LOAD /opt/homebrew/Cellar/arm-gcc-bin@8/8-2019-q3-update_2/bin/../lib/gcc/arm-no
 END GROUP
                 0x0000000000002000                STACK_SIZE = DEFINED (STACK_SIZE)?STACK_SIZE:DEFINED (__stack_size__)?__stack_size__:0x2000
 
-.text           0x0000000000000000     0x1d48
+.text           0x0000000000000000     0x1d10
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                _sfixed = .
  *(.vectors .vectors.*)
@@ -460,70 +460,71 @@ END GROUP
                 0x0000000000001b80       0x21 build/SLAPSSHV1.0/cdc_enumerate.o
                 0x0000000000001b80                hidDescriptor
  .rodata.str1.1
-                0x0000000000001ba1       0x26 build/SLAPSSHV1.0/cdc_enumerate.o
- *fill*         0x0000000000001bc7        0x1 
+                0x0000000000001ba1        0x9 build/SLAPSSHV1.0/cdc_enumerate.o
+ *fill*         0x0000000000001baa        0x2 
  .rodata.string_descriptors
-                0x0000000000001bc8       0x10 build/SLAPSSHV1.0/cdc_enumerate.o
+                0x0000000000001bac       0x10 build/SLAPSSHV1.0/cdc_enumerate.o
  .rodata.BootBlock
-                0x0000000000001bd8       0x3e build/SLAPSSHV1.0/fat.o
+                0x0000000000001bbc       0x3e build/SLAPSSHV1.0/fat.o
  .rodata.indexFile
-                0x0000000000001c16       0x5f build/SLAPSSHV1.0/fat.o
-                0x0000000000001c16                indexFile
- *fill*         0x0000000000001c75        0x3 
- .rodata.info   0x0000000000001c78       0x30 build/SLAPSSHV1.0/fat.o
+                0x0000000000001bfa       0x5f build/SLAPSSHV1.0/fat.o
+                0x0000000000001bfa                indexFile
+ *fill*         0x0000000000001c59        0x3 
+ .rodata.info   0x0000000000001c5c       0x30 build/SLAPSSHV1.0/fat.o
  .rodata.infoUf2File
-                0x0000000000001ca8       0x5a build/SLAPSSHV1.0/fat.o
-                0x0000000000001ca8                infoUf2File
- .rodata        0x0000000000001d02        0xc build/SLAPSSHV1.0/msc.o
+                0x0000000000001c8c       0x3d build/SLAPSSHV1.0/fat.o
+                0x0000000000001c8c                infoUf2File
+ .rodata        0x0000000000001cc9        0xc build/SLAPSSHV1.0/msc.o
  .rodata.process_msc.str1.1
-                0x0000000000001d0e        0xe build/SLAPSSHV1.0/msc.o
+                0x0000000000001cd5        0x5 build/SLAPSSHV1.0/msc.o
  .rodata.fullVersion
-                0x0000000000001d0e       0x2a build/SLAPSSHV1.0/sam_ba_monitor.o
+                0x0000000000001cd5       0x2a build/SLAPSSHV1.0/sam_ba_monitor.o
  .rodata.sam_ba_monitor_run.str1.1
-                0x0000000000001d38       0x10 build/SLAPSSHV1.0/sam_ba_monitor.o
+                0x0000000000001cff       0x10 build/SLAPSSHV1.0/sam_ba_monitor.o
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000000001d48                . = ALIGN (0x4)
+                0x0000000000001d10                . = ALIGN (0x4)
+ *fill*         0x0000000000001d0f        0x1 
  *(.init)
-                0x0000000000001d48                . = ALIGN (0x4)
-                0x0000000000001d48                __preinit_array_start = .
+                0x0000000000001d10                . = ALIGN (0x4)
+                0x0000000000001d10                __preinit_array_start = .
  *(.preinit_array)
-                0x0000000000001d48                __preinit_array_end = .
-                0x0000000000001d48                . = ALIGN (0x4)
-                0x0000000000001d48                __init_array_start = .
+                0x0000000000001d10                __preinit_array_end = .
+                0x0000000000001d10                . = ALIGN (0x4)
+                0x0000000000001d10                __init_array_start = .
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
-                0x0000000000001d48                __init_array_end = .
-                0x0000000000001d48                . = ALIGN (0x4)
+                0x0000000000001d10                __init_array_end = .
+                0x0000000000001d10                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *crtend.o(.ctors)
-                0x0000000000001d48                . = ALIGN (0x4)
-                0x0000000000001d48                _efixed = .
+                0x0000000000001d10                . = ALIGN (0x4)
+                0x0000000000001d10                _efixed = .
                 [!provide]                        PROVIDE (__exidx_start = .)
 
-.vfp11_veneer   0x0000000000001d48        0x0
- .vfp11_veneer  0x0000000000001d48        0x0 linker stubs
+.vfp11_veneer   0x0000000000001d10        0x0
+ .vfp11_veneer  0x0000000000001d10        0x0 linker stubs
 
-.v4_bx          0x0000000000001d48        0x0
- .v4_bx         0x0000000000001d48        0x0 linker stubs
+.v4_bx          0x0000000000001d10        0x0
+ .v4_bx         0x0000000000001d10        0x0 linker stubs
 
-.iplt           0x0000000000001d48        0x0
- .iplt          0x0000000000001d48        0x0 build/SLAPSSHV1.0/flash_samd21.o
+.iplt           0x0000000000001d10        0x0
+ .iplt          0x0000000000001d10        0x0 build/SLAPSSHV1.0/flash_samd21.o
 
-.igot.plt       0x0000000000001d48        0x0
- .igot.plt      0x0000000000001d48        0x0 build/SLAPSSHV1.0/flash_samd21.o
+.igot.plt       0x0000000000001d10        0x0
+ .igot.plt      0x0000000000001d10        0x0 build/SLAPSSHV1.0/flash_samd21.o
 
-.rel.dyn        0x0000000000001d48        0x0
- .rel.iplt      0x0000000000001d48        0x0 build/SLAPSSHV1.0/flash_samd21.o
+.rel.dyn        0x0000000000001d10        0x0
+ .rel.iplt      0x0000000000001d10        0x0 build/SLAPSSHV1.0/flash_samd21.o
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 [!provide]                        PROVIDE (__exidx_end = .)
-                0x0000000000001d48                . = ALIGN (0x4)
-                0x0000000000001d48                _etext = .
+                0x0000000000001d10                . = ALIGN (0x4)
+                0x0000000000001d10                _etext = .
 
-.relocate       0x0000000020000000      0x1d0 load address 0x0000000000001d48
+.relocate       0x0000000020000000      0x1d0 load address 0x0000000000001d10
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -559,7 +560,7 @@ END GROUP
                 0x00000000200001d0                . = ALIGN (0x4)
                 0x00000000200001d0                _erelocate = .
 
-.bss            0x00000000200001d0      0xc0c load address 0x0000000000001f18
+.bss            0x00000000200001d0      0xc0c load address 0x0000000000001ee0
                 0x00000000200001d0                . = ALIGN (0x4)
                 0x00000000200001d0                _sbss = .
                 0x00000000200001d0                _szero = .
@@ -627,7 +628,7 @@ END GROUP
                 0x0000000020000ddc                _ebss = .
                 0x0000000020000ddc                _ezero = .
 
-.stack          0x0000000020000ddc     0x2004 load address 0x0000000000002b24
+.stack          0x0000000020000ddc     0x2004 load address 0x0000000000002aec
                 0x0000000020000de0                . = ALIGN (0x8)
  *fill*         0x0000000020000ddc        0x4 
                 0x0000000020000de0                _sstack = .
