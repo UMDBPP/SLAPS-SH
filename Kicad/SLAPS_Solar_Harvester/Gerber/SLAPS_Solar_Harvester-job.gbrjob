@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "(6.0.11-0)"
     },
-    "CreationDate": "2023-04-11T08:14:19-04:00"
+    "CreationDate": "2023-05-17T19:32:27-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "SLAPS_Solar_Harvester",
       "GUID": "534c4150-535f-4536-9f6c-61725f486172",
-      "Revision": "rev?"
+      "Revision": "V1.1"
     },
     "Size": {
       "X": 67.6,
@@ -28,8 +28,8 @@
       "PadToTrack": 0.1524,
       "TrackToTrack": 0.1524,
       "MinLineWidth": 0.2,
-      "TrackToRegion": 0.2,
-      "RegionToRegion": 0.2
+      "TrackToRegion": 0.17,
+      "RegionToRegion": 0.17
     }
   ],
   "FilesAttributes": [
